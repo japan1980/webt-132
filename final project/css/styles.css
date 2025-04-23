@@ -1,0 +1,132 @@
+/* Global Styles */
+
+body {
+    background-color: #E94B20;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+
+#container {
+    background-color: #ADCAE1;
+}
+
+/* Mobile Styles */
+
+@media (min-width: 320px) {
+    nav {
+        background-color: #010326;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+       list-style-type: none; 
+       padding: 0;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav li a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        background-color: #F2E30F;
+        color: #F26E22;
+        font-size: 24px;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+
+    nav li a:hover {
+        background-color: #285EA7;
+    }
+
+    main {
+       padding: 20px; 
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+        color:  #F26E22;
+        text-shadow: 1px 1px 1px black;
+        font-family: "Special Gothic Expanded One", sans-serif;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px;
+        color:  #F26E22;
+        text-shadow: 1px 1px 1px black;
+        font-family: "Special Gothic Condensed One", sans-serif;
+    }
+
+}
+
+/* Tablet Styles */
+
+@media (min-width: 768px) {
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        margin: 5px;
+    }
+
+    .movie_post {
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px #E94B20;
+    }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+    #container {
+        width: 65%;
+        margin: 20px auto;
+        border: 4px solid #010326;
+        border-radius: 20px;
+    }
+
+    nav {
+        padding: 2px;
+        margin: 0;
+    }
+
+    nav li a{
+        background-color: #F2E30F;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #multi_col {
+        display: flex;
+    }
+
+    .col {
+        margin: 20px;
+        padding: 20px;
+        border: 2px black;
+    }
+}
